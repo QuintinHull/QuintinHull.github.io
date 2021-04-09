@@ -1708,6 +1708,7 @@ input, select, textarea {
 			text-align: center;
 			display: grid;
 			width: fit-content;
+			margin: auto;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(1, 1fr);
 		}
@@ -1715,22 +1716,37 @@ input, select, textarea {
 		@media (max-width: 737px) {
 			.projects_container img {
 				margin: auto;
-				height: 160px;
+				height: 150px;
 			}
 		}
 		
-		@media (max-width: 590px) {
+		@media (max-width: 550px) {
 			.projects_container img {
 				margin: auto;
 				height: 130px;
 			}
 
 			.projects_description_container h3 {
-				font-size: 20px;
+				font-size: 25px;
 			}
 
 			.project_list li {
-				font-size: 12px;
+				font-size: 15px;
+			}
+		}
+
+		@media (max-width: 550px) {
+			.projects_container img {
+				margin: auto;
+				height: 100px;
+			}
+
+			.projects_description_container h3 {
+				font-size: 15px;
+			}
+
+			.project_list li {
+				font-size: 8px;
 			}
 		}
 
