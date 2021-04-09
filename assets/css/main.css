@@ -1667,14 +1667,33 @@ input, select, textarea {
 			grid-template-rows: repeat(3, 1fr);
 		}
 
-		.skill_icons {
+		@media (max-width: 560px) {
+			.skill_icons_container {
+				height: fit-content;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+			}
+		}
+
+		@media (max-width: 460px) {
+			.skill_icons_container {
+				height: fit-content;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				/* grid-template-rows: repeat(3, 1fr); */
+			}
+		}
+	
+	.skill_icons {
+			margin: 2px;
 			display: flex;
 			justify-content: center;
 			font-size: 100px;
 		}
 		
 		.projects_container {
-			height: 400px;
+			height: 220px;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(1, 1fr);
@@ -1687,10 +1706,32 @@ input, select, textarea {
 		
 		.projects_description_container {
 			text-align: center;
-			/* border: 1px solid red; */
 			display: grid;
+			width: fit-content;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(1, 1fr);
+		}
+
+		@media (max-width: 737px) {
+			.projects_container img {
+				margin: auto;
+				height: 160px;
+			}
+		}
+		
+		@media (max-width: 590px) {
+			.projects_container img {
+				margin: auto;
+				height: 130px;
+			}
+
+			.projects_description_container h3 {
+				font-size: 20px;
+			}
+
+			.project_list li {
+				font-size: 12px;
+			}
 		}
 
 		.project_list {
@@ -1701,10 +1742,21 @@ input, select, textarea {
 		}
 
 		.project_title {
-			font-size: 35px;
+			margin-top: 10px;
+			font-size: 30px;
 		}
 
 		.contact_label {
 			font-size: 20px;
 		}
+		
+		.resume_wrapper {
+			height: 65vh;
+		}
 
+		.resume {
+  			width: 100%;
+  			height: 90%;
+			border-radius: 3px;
+			margin-bottom: 5px;
+		}
