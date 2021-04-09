@@ -1271,16 +1271,16 @@ input, select, textarea {
 			margin-top: 3.5rem;
 		}
 
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
+		#header > *:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: calc(-3.5rem - 1px);
+			left: calc(50% - 1px);
+			width: 1px;
+			height: calc(3.5rem + 1px);
+			background: #ffffff;
+		}
 
 		#header > :first-child {
 			margin-top: 0;
@@ -1775,8 +1775,4 @@ input, select, textarea {
   			height: 90%;
 			border-radius: 3px;
 			margin-bottom: 5px;
-		}
-
-		.code_icon {
-			width: 55px;
 		}
