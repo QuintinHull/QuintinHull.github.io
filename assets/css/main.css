@@ -1542,7 +1542,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+			padding: 4.5rem 2.5rem 3.5rem 2.5rem ;
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
@@ -1664,7 +1664,7 @@ input, select, textarea {
 			height: 400px;
 			display: grid;
 			grid-template-columns: repeat(5, 1fr);
-			grid-template-rows: repeat(3, 1fr);
+			grid-template-rows: repeat(4, 1fr);
 		}
 
 		@media (max-width: 560px) {
@@ -1672,7 +1672,7 @@ input, select, textarea {
 				height: fit-content;
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
-				grid-template-rows: repeat(3, 1fr);
+				/* grid-template-rows: repeat(7, 1fr); */
 			}
 		}
 
@@ -1686,7 +1686,7 @@ input, select, textarea {
 		}
 	
 	.skill_icons {
-			margin: 2px;
+			margin: 3px;
 			display: flex;
 			justify-content: center;
 			font-size: 100px;
